@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="fr" class="scroll-smooth">
 <head>
@@ -1396,4 +1397,1404 @@
     });
   </script>
 </body>
+=======
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MAYAS VOLAILLE — De l'élevage à votre assiette | Aviculture & Aliments</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'system-ui', 'sans-serif'],
+          },
+          colors: {
+            mayas: {
+              green: '#16a34a',
+              greenDark: '#14532d',
+              amber: '#f59e0b',
+              orange: '#ea580c',
+              slate: '#0f172a',
+            }
+          },
+          keyframes: {
+            float: {
+              '0%, 100%': { transform: 'translateY(0px)' },
+              '50%': { transform: 'translateY(-6px)' },
+            }
+          },
+          animation: {
+            float: 'float 4s ease-in-out infinite',
+          }
+        }
+      }
+    };
+  </script>
+  <style>
+    body {
+      font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+      background-color: #f8fafc;
+      color: #0f172a;
+      overflow-x: hidden;
+    }
+    .glass-nav {
+      background: rgba(255, 255, 255, 0.88);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+    }
+    .hero-mesh {
+      background-color: #ffffff;
+      background-image:
+        radial-gradient(at 10% 15%, rgba(22, 163, 74, 0.14) 0px, transparent 50%),
+        radial-gradient(at 90% 20%, rgba(245, 158, 11, 0.16) 0px, transparent 50%),
+        radial-gradient(at 50% 90%, rgba(220, 252, 231, 0.6) 0px, transparent 55%);
+    }
+    .reveal {
+      opacity: 0;
+      transform: translateY(22px);
+      transition: opacity 0.65s cubic-bezier(0.16, 1, 0.3, 1), transform 0.65s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    .custom-scrollbar::-webkit-scrollbar { width: 6px; height: 6px; }
+    .custom-scrollbar::-webkit-scrollbar-track { background: #f1f5f9; border-radius: 9999px; }
+    .custom-scrollbar::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 9999px; }
+    .custom-scrollbar::-webkit-scrollbar-thumb:hover { background: #94a3b8; }
+  </style>
+</head>
+<body class="antialiased selection:bg-green-100 selection:text-green-900">
+
+  <!-- Toast Container -->
+  <div id="toast-container" class="fixed bottom-5 left-1/2 -translate-x-1/2 z-[100] flex flex-col gap-2 w-[92%] max-w-md pointer-events-none"></div>
+
+  <!-- Floating WhatsApp Quick Action -->
+  <a id="floating-wa" href="https://wa.me/2250777093069?text=Bonjour%20MAYAS%20VOLAILLE%2C%20je%20souhaite%20commander%20ou%20obtenir%20un%20devis." target="_blank" rel="noopener"
+     class="fixed bottom-5 right-5 z-40 flex items-center gap-2.5 bg-[#25D366] hover:bg-[#1ebe5d] text-white font-bold text-xs sm:text-sm px-4 py-3 rounded-full shadow-xl shadow-emerald-900/20 transition-all hover:scale-105 group"
+     aria-label="Contacter MAYAS VOLAILLE sur WhatsApp">
+    <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86s.274.072.376-.043c.101-.116.433-.506.549-.68.116-.173.231-.145.39-.087s1.011.477 1.184.564.289.13.332.202c.045.072.045.419-.1.824z"/></svg>
+    <span class="hidden sm:inline">Commander sur WhatsApp</span>
+  </a>
+
+  <!-- Top Utility Bar -->
+  <div class="bg-slate-950 text-slate-300 text-xs py-2 px-4 border-b border-slate-800">
+    <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-2">
+      <div class="flex flex-wrap items-center gap-x-4 gap-y-1">
+        <span class="inline-flex items-center gap-1.5 font-semibold text-amber-400">
+          <span class="w-2 h-2 rounded-full bg-amber-400 animate-ping"></span>
+          CHEPITIMAYAS AGRI SARL • MAYAS DISTRIBUTION
+        </span>
+        <span class="hidden sm:inline text-slate-600">|</span>
+        <a href="tel:0152563393" class="hover:text-white transition">Tél: 01.52.56.33.93 / 07.77.09.30.69 / 07.59.05.80.25</a>
+      </div>
+      <div class="flex items-center gap-4">
+        <span class="text-emerald-400 font-semibold">✓ 100% Halal Certifié</span>
+        <span class="hidden md:inline text-slate-400">www.mayasvolaille.com</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Sticky Header -->
+  <header class="sticky top-0 z-40 glass-nav border-b border-slate-200/80 shadow-2xs transition-all">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16 sm:h-20 gap-3">
+        <!-- Brand Logo -->
+        <a href="#accueil" class="flex items-center gap-3 shrink-0 group">
+          <svg class="w-11 h-12 sm:w-12 sm:h-14 drop-shadow-xs transition-transform duration-300 group-hover:scale-105" viewBox="0 0 90 104" fill="none">
+            <defs>
+              <linearGradient id="eggSunGrad" x1="45" y1="4" x2="45" y2="74" gradientUnits="userSpaceOnUse">
+                <stop offset="0%" stop-color="#fbbf24"/><stop offset="55%" stop-color="#f59e0b"/><stop offset="100%" stop-color="#ea580c"/>
+              </linearGradient>
+              <linearGradient id="hillGrad" x1="45" y1="68" x2="45" y2="100" gradientUnits="userSpaceOnUse">
+                <stop offset="0%" stop-color="#22c55e"/><stop offset="100%" stop-color="#15803d"/>
+              </linearGradient>
+            </defs>
+            <path d="M45 4C22 4 8 34 8 62C8 84 23 100 45 100C67 100 82 84 82 62C82 34 68 4 45 4Z" fill="url(#eggSunGrad)"/>
+            <g stroke="#fef08a" stroke-width="2.2" stroke-linecap="round" opacity="0.55">
+              <line x1="45" y1="36" x2="45" y2="9"/><line x1="45" y1="36" x2="22" y2="16"/><line x1="45" y1="36" x2="68" y2="16"/>
+              <line x1="45" y1="36" x2="12" y2="36"/><line x1="45" y1="36" x2="78" y2="36"/>
+            </g>
+            <path d="M36 68C32 68 29 65 29 61C29 57 32 53 34 49C32 46 31 42 33 38C34 36 36 35 37 33C36 30 38 27 41 27C43 27 44 29 45 30C47 28 50 28 51 30C52 32 50 34 48 35L55 38L49 41C50 45 49 51 46 56L48 68H45L43 60H39L38 68H36Z" fill="#ffffff"/>
+            <path d="M9 66C24 61 42 63 58 70C68 74 75 74 81 71C78 89 63 100 45 100C27 100 12 89 9 66Z" fill="url(#hillGrad)"/>
+            <path d="M11 76C27 71 45 73 61 81C68 84 74 84 79 81" stroke="#dcfce7" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+          </svg>
+          <div class="leading-tight">
+            <div class="text-base sm:text-xl font-extrabold tracking-tight">
+              <span class="text-green-700">MAYAS</span> <span class="text-amber-500">VOLAILLE</span>
+            </div>
+            <div class="text-[11px] font-medium text-slate-500">De l'élevage à votre assiette.</div>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation -->
+        <nav class="hidden lg:flex items-center gap-6 text-sm font-semibold text-slate-700">
+          <a href="#accueil" class="hover:text-green-700 transition">Accueil</a>
+          <a href="#medias-ferme" class="hover:text-green-700 transition">Photos & Vidéos</a>
+          <a href="#savoir-faire" class="hover:text-green-700 transition">Savoir-Faire</a>
+          <a href="#catalogue" class="hover:text-green-700 transition">Catalogue</a>
+          <a href="#outils-ia" class="hover:text-amber-600 transition text-amber-600 flex items-center gap-1">
+            <span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span> Calculateur & IA
+          </a>
+          <a href="#contact-devis" class="hover:text-green-700 transition">Devis & Contact</a>
+        </nav>
+
+        <!-- Actions -->
+        <div class="flex items-center gap-2 sm:gap-3">
+          <div class="hidden sm:flex items-center bg-slate-100 p-1 rounded-full border border-slate-200 text-xs font-bold">
+            <button id="btn-mode-b2c" onclick="setClientMode('b2c')" class="px-3.5 py-1.5 rounded-full bg-green-600 text-white shadow-xs transition cursor-pointer">
+              Particulier
+            </button>
+            <button id="btn-mode-b2b" onclick="setClientMode('b2b')" class="px-3.5 py-1.5 rounded-full text-slate-600 hover:text-slate-900 transition cursor-pointer">
+              Éleveur / Pro
+            </button>
+          </div>
+
+          <button onclick="openOrdersModal()" class="p-2.5 rounded-xl border border-slate-200 hover:border-green-500 hover:bg-green-50 text-slate-700 transition relative cursor-pointer" title="Suivi de commandes">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"/></svg>
+            <span id="orders-badge" class="hidden -top-1 -right-1 absolute w-4 h-4 rounded-full bg-amber-500 text-white text-[10px] font-bold flex items-center justify-center">0</span>
+          </button>
+
+          <button onclick="toggleCart(true)" class="flex items-center gap-2 px-4 py-2.5 rounded-xl bg-green-600 hover:bg-green-700 text-white font-bold text-sm shadow-sm hover:shadow transition cursor-pointer">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"/></svg>
+            <span class="hidden md:inline">Panier</span>
+            <span id="cart-count" class="bg-amber-400 text-slate-950 text-xs font-extrabold px-2 py-0.5 rounded-full">0</span>
+          </button>
+
+          <button onclick="toggleMobileMenu()" class="lg:hidden p-2 rounded-xl border border-slate-200 text-slate-700 hover:bg-slate-100 cursor-pointer" aria-label="Menu">
+            <svg id="menu-icon-open" class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/></svg>
+            <svg id="menu-icon-close" class="w-6 h-6 hidden" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div id="mobile-menu" class="hidden lg:hidden pb-4 pt-2 border-t border-slate-200 space-y-2">
+        <div class="flex items-center justify-between bg-slate-100 p-2 rounded-xl mb-2">
+          <span class="text-xs font-semibold text-slate-600">Profil tarifaire :</span>
+          <div class="flex gap-1">
+            <button id="m-mode-b2c" onclick="setClientMode('b2c')" class="px-3 py-1 rounded-lg bg-green-600 text-white text-xs font-semibold">Particulier</button>
+            <button id="m-mode-b2b" onclick="setClientMode('b2b')" class="px-3 py-1 rounded-lg text-slate-700 text-xs font-semibold">Éleveur / Pro</button>
+          </div>
+        </div>
+        <a href="#accueil" onclick="toggleMobileMenu()" class="block px-3 py-2 rounded-lg hover:bg-green-50 font-semibold text-sm">Accueil</a>
+        <a href="#medias-ferme" onclick="toggleMobileMenu()" class="block px-3 py-2 rounded-lg hover:bg-green-50 font-semibold text-sm">Photos & Vidéos</a>
+        <a href="#savoir-faire" onclick="toggleMobileMenu()" class="block px-3 py-2 rounded-lg hover:bg-green-50 font-semibold text-sm">Savoir-Faire</a>
+        <a href="#catalogue" onclick="toggleMobileMenu()" class="block px-3 py-2 rounded-lg hover:bg-green-50 font-semibold text-sm">Catalogue Produits</a>
+        <a href="#outils-ia" onclick="toggleMobileMenu()" class="block px-3 py-2 rounded-lg hover:bg-amber-50 text-amber-700 font-semibold text-sm">Calculateur & Assistant IA</a>
+        <a href="#contact-devis" onclick="toggleMobileMenu()" class="block px-3 py-2 rounded-lg hover:bg-green-50 font-semibold text-sm">Devis B2B/CHR & Contact</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section id="accueil" class="hero-mesh pt-10 pb-16 sm:pt-14 sm:pb-24 border-b border-slate-200/80">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+        <div class="lg:col-span-7 space-y-6">
+          <div class="inline-flex flex-wrap items-center gap-2 bg-white border border-green-200 px-3.5 py-1.5 rounded-full shadow-2xs">
+            <span class="w-2 h-2 rounded-full bg-green-500"></span>
+            <span class="text-xs font-bold text-green-800">MAYAS VOLAILLE • MAYAS DISTRIBUTION</span>
+            <span class="text-xs bg-amber-100 text-amber-800 font-extrabold px-2 py-0.5 rounded-full">100% HALAL</span>
+          </div>
+
+          <h1 class="text-3xl sm:text-5xl lg:text-[52px] font-extrabold tracking-tight text-slate-900 leading-[1.1]">
+            De l'élevage à votre assiette, <span class="text-green-600">l'excellence avicole</span> au service de vos performances.
+          </h1>
+
+          <p class="text-base sm:text-lg text-slate-600 leading-relaxed max-w-2xl">
+            Aliments haute performance (Prédémarrage, Croissance Chair, Finition), poulets de chair, dindes, pintades, pondeuses, cailles, poulet africain, poussins d'un jour et matériel d'élevage pour <strong>particuliers</strong>, <strong>éleveurs</strong> et <strong>restaurateurs (CHR)</strong>.
+          </p>
+
+          <!-- Interactive Profile Switcher Banner -->
+          <div class="bg-white/95 rounded-2xl p-4 border border-slate-200 shadow-sm flex flex-wrap items-center justify-between gap-3">
+            <div class="flex items-center gap-3">
+              <div class="w-10 h-10 rounded-xl bg-green-100 text-green-700 flex items-center justify-center font-extrabold text-sm">
+                PRO
+              </div>
+              <div>
+                <div class="text-xs text-slate-500">Tarification affichée :</div>
+                <div id="active-mode-label" class="text-sm font-extrabold text-green-800">Client Particulier (B2C) — Achat direct & livraison rapide</div>
+              </div>
+            </div>
+            <button onclick="setClientMode(currentMode === 'b2c' ? 'b2b' : 'b2c')" class="text-xs font-extrabold px-3.5 py-2 rounded-xl bg-amber-50 text-amber-800 border border-amber-300 hover:bg-amber-100 transition cursor-pointer">
+              Basculer en <span id="switch-mode-target">Éleveur / Pro (B2B)</span> →
+            </button>
+          </div>
+
+          <!-- Primary CTAs -->
+          <div class="flex flex-wrap items-center gap-3.5 pt-1">
+            <a href="#catalogue" class="px-6 py-3.5 rounded-xl bg-green-600 hover:bg-green-700 text-white font-bold text-sm sm:text-base shadow-lg shadow-green-600/20 transition-all hover:-translate-y-0.5 inline-flex items-center gap-2">
+              Commander au Catalogue
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6"/></svg>
+            </a>
+            <a href="#medias-ferme" class="px-6 py-3.5 rounded-xl bg-amber-500 hover:bg-amber-600 text-slate-950 font-bold text-sm sm:text-base shadow-lg shadow-amber-500/20 transition-all hover:-translate-y-0.5 inline-flex items-center gap-2">
+              Voir Photos, Affiches & Vidéos
+            </a>
+          </div>
+
+          <!-- Animated Key Metrics -->
+          <div class="grid grid-cols-3 gap-4 pt-4 border-t border-slate-200/80">
+            <div>
+              <div class="text-2xl sm:text-3xl font-extrabold text-slate-900"><span class="counter" data-target="15000">0</span>+</div>
+              <div class="text-xs text-slate-500 font-medium">Volailles suivies / an</div>
+            </div>
+            <div>
+              <div class="text-2xl sm:text-3xl font-extrabold text-green-700"><span class="counter" data-target="48">0</span>h</div>
+              <div class="text-xs text-slate-500 font-medium">Délai moyen livraison</div>
+            </div>
+            <div>
+              <div class="text-2xl sm:text-3xl font-extrabold text-amber-600"><span class="counter" data-target="100">0</span>%</div>
+              <div class="text-xs text-slate-500 font-medium">Traçabilité & Halal</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Visual Showcase Card -->
+        <div class="lg:col-span-5">
+          <div class="bg-white rounded-3xl p-4 sm:p-5 border border-slate-200 shadow-2xl space-y-4 animate-float">
+            <div class="rounded-2xl overflow-hidden border border-amber-200/80 bg-slate-50">
+              <img src="assets/pesee-dinde.jpeg"
+                   alt="Pesée d'une dinde blanche sur balance mécanique Wadfow WEC9A20 dans un bâtiment d'élevage MAYAS VOLAILLE"
+                   onclick="openLightbox('assets/pesee-dinde.jpeg', 'Contrôle pondéral d\'une dinde blanche sur balance Wadfow')"
+                   class="w-full h-72 sm:h-80 object-cover object-center cursor-zoom-in hover:scale-[1.02] transition-transform duration-300" />
+            </div>
+            <div class="flex items-center justify-between gap-2 text-xs px-1">
+              <span class="font-bold text-slate-800">Pesée sur balance Wadfow en ferme</span>
+              <button onclick="openLightbox('assets/pesee-dinde.jpeg', 'Contrôle pondéral d\'une dinde blanche sur balance Wadfow')" class="text-green-700 font-extrabold hover:underline cursor-pointer">
+                Agrandir la photo →
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION MÉDIAS : AFFICHES, PHOTOS TERRAIN & VIDÉOS -->
+  <section id="medias-ferme" class="py-16 sm:py-20 bg-white border-b border-slate-200/80 reveal">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-3xl mb-10">
+        <span class="text-xs font-extrabold uppercase tracking-wider text-green-700 bg-green-100 px-3 py-1 rounded-full">Galerie Terrain, Affiches & Vidéos</span>
+        <h2 class="text-2xl sm:text-4xl font-extrabold text-slate-900 mt-3">
+          Nos bâtiments d'élevage, affiches officielles et séquences vidéo
+        </h2>
+        <p class="text-slate-600 mt-2 text-sm sm:text-base">
+          Visualisez nos lots en élevage, nos supports de communication <strong>MAYAS DISTRIBUTION / MAYAS VOLAILLE</strong> et nos vidéos d'exploitation.
+        </p>
+      </div>
+
+      <!-- 1. Grille Photos Terrain & Affiches -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-14">
+        <article class="bg-slate-50 rounded-2xl border border-slate-200 overflow-hidden shadow-2xs hover:shadow-lg transition flex flex-col">
+          <img src="assets/pesee-dinde.jpeg"
+               alt="Dinde blanche pesée sur balance Wadfow WEC9A20 en bâtiment d'élevage"
+               onclick="openLightbox('assets/pesee-dinde.jpeg', 'Pesée dinde blanche sur balance Wadfow')"
+               class="w-full h-56 object-cover cursor-zoom-in" />
+          <div class="p-4 flex-1 flex flex-col justify-between">
+            <div>
+              <span class="text-[11px] font-bold text-amber-800 bg-amber-100 px-2.5 py-0.5 rounded-full">Contrôle du Poids</span>
+              <h3 class="font-extrabold text-slate-900 mt-2 text-base">Pesée de dinde blanche (Balance Wadfow)</h3>
+              <p class="text-xs text-slate-600 mt-1">Vérification du poids sur balance à cadran Wadfow (cap. 20 kg) au cœur du bâtiment.</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="bg-slate-50 rounded-2xl border border-slate-200 overflow-hidden shadow-2xs hover:shadow-lg transition flex flex-col">
+          <img src="assets/demarrage-poussins.jpeg"
+               alt="Poussins sous bâche noire avec abreuvoirs blancs et mangeoires rouges"
+               onclick="openLightbox('assets/demarrage-poussins.jpeg', 'Démarrage des poussins sous bâche et abreuvoirs')"
+               class="w-full h-56 object-cover cursor-zoom-in" />
+          <div class="p-4 flex-1 flex flex-col justify-between">
+            <div>
+              <span class="text-[11px] font-bold text-green-800 bg-green-100 px-2.5 py-0.5 rounded-full">Phase Démarrage</span>
+              <h3 class="font-extrabold text-slate-900 mt-2 text-base">Démarrage des poussins sous bâche</h3>
+              <p class="text-xs text-slate-600 mt-1">Confinement thermique sous bâche noire avec abreuvoirs et mangeoires premiers âges.</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="bg-slate-50 rounded-2xl border border-slate-200 overflow-hidden shadow-2xs hover:shadow-lg transition flex flex-col">
+          <img src="assets/batiment-elevage-1.jpeg"
+               alt="Bâtiment d'élevage avec mangeoires suspendues, abreuvoirs cloches et litière"
+               onclick="openLightbox('assets/batiment-elevage-1.jpeg', 'Bâtiment d\'élevage avec mangeoires et abreuvoirs cloches')"
+               class="w-full h-56 object-cover cursor-zoom-in" />
+          <div class="p-4 flex-1 flex flex-col justify-between">
+            <div>
+              <span class="text-[11px] font-bold text-slate-800 bg-slate-200 px-2.5 py-0.5 rounded-full">Bâtiment & Matériel</span>
+              <h3 class="font-extrabold text-slate-900 mt-2 text-base">Bâtiment ventilé & abreuvoirs cloches</h3>
+              <p class="text-xs text-slate-600 mt-1">Organisation des abreuvoirs cloches, mangeoires et litière pour le confort de la bande.</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="bg-slate-50 rounded-2xl border border-slate-200 overflow-hidden shadow-2xs hover:shadow-lg transition flex flex-col">
+          <img src="assets/batiment-elevage-2.jpeg"
+               alt="Vue latérale d'un lot d'élevage sous bâche et grillage"
+               onclick="openLightbox('assets/batiment-elevage-2.jpeg', 'Conduite de lot en bâtiment grillagé')"
+               class="w-full h-56 object-cover cursor-zoom-in" />
+          <div class="p-4 flex-1 flex flex-col justify-between">
+            <div>
+              <span class="text-[11px] font-bold text-green-800 bg-green-100 px-2.5 py-0.5 rounded-full">Suivi de Lot</span>
+              <h3 class="font-extrabold text-slate-900 mt-2 text-base">Conduite d'un lot en bâtiment grillagé</h3>
+              <p class="text-xs text-slate-600 mt-1">Aération naturelle, protection périphérique et répartition homogène des volailles.</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="bg-slate-50 rounded-2xl border border-slate-200 overflow-hidden shadow-2xs hover:shadow-lg transition flex flex-col">
+          <img src="assets/affiche-distribution.jpeg"
+               alt="Affiche MAYAS DISTRIBUTION : Aliment prédémarrage, croissance chair, finition, poulets, dindes, poussins"
+               onclick="openLightbox('assets/affiche-distribution.jpeg', 'Affiche MAYAS DISTRIBUTION — Gamme Aliments & Volailles')"
+               class="w-full h-56 object-cover object-top cursor-zoom-in" />
+          <div class="p-4 flex-1 flex flex-col justify-between">
+            <div>
+              <span class="text-[11px] font-bold text-amber-800 bg-amber-100 px-2.5 py-0.5 rounded-full">Affiche Distribution</span>
+              <h3 class="font-extrabold text-slate-900 mt-2 text-base">Gamme MAYAS DISTRIBUTION</h3>
+              <p class="text-xs text-slate-600 mt-1">Aliments Prédémarrage, Croissance Chair, Finition, poulets, dindes et poussins.</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="bg-slate-50 rounded-2xl border border-slate-200 overflow-hidden shadow-2xs hover:shadow-lg transition flex flex-col">
+          <img src="assets/affiche-services.jpeg"
+               alt="Affiche MAYAS VOLAILLE : Nos Services - Poulet de chairs, pintades, dindons, pondeuses, cailles, poulet africain, poussins d'un jour, matériel, conseil, Produit Halal"
+               onclick="openLightbox('assets/affiche-services.jpeg', 'Affiche MAYAS VOLAILLE — Nos Services & Produit Halal')"
+               class="w-full h-56 object-cover object-top cursor-zoom-in" />
+          <div class="p-4 flex-1 flex flex-col justify-between">
+            <div>
+              <span class="text-[11px] font-bold text-emerald-800 bg-emerald-100 px-2.5 py-0.5 rounded-full">Affiche Services • Halal</span>
+              <h3 class="font-extrabold text-slate-900 mt-2 text-base">Nos 5 Services MAYAS VOLAILLE</h3>
+              <p class="text-xs text-slate-600 mt-1">Production variée, poussins d'1 jour, matériel d'élevage, conseil et Produit Halal.</p>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <!-- 2. Lecteur Vidéo Intégré -->
+      <div class="bg-slate-900 text-white rounded-3xl p-6 sm:p-8 border border-slate-800 shadow-xl">
+        <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-6">
+          <div>
+            <span class="text-xs font-extrabold uppercase tracking-wider text-amber-400">Vidéos d'Exploitation</span>
+            <h3 class="text-xl sm:text-3xl font-extrabold mt-1">Visite vidéo de nos lots en ferme</h3>
+          </div>
+          <div class="flex flex-wrap gap-2">
+            <button id="vid-tab-1" onclick="selectVideo('assets/dindes-batiment.mp4', 1)" class="px-4 py-2 rounded-xl text-xs sm:text-sm font-extrabold bg-amber-500 text-slate-950 transition cursor-pointer">
+              Vidéo 1 : Dindes en Bâtiment (2m24)
+            </button>
+            <button id="vid-tab-2" onclick="selectVideo('assets/controle-lot-jeunes.mp4', 2)" class="px-4 py-2 rounded-xl text-xs sm:text-sm font-extrabold bg-slate-800 hover:bg-slate-700 text-slate-200 transition cursor-pointer">
+              Vidéo 2 : Contrôle Lot Jeunes Sujets (1m43)
+            </button>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-center">
+          <div class="lg:col-span-7">
+            <div class="rounded-2xl overflow-hidden bg-black border border-slate-700 shadow-lg">
+              <video id="farm-video-player" src="assets/dindes-batiment.mp4" controls playsinline preload="metadata" class="w-full max-h-[440px] object-contain mx-auto bg-black">
+                Votre navigateur ne prend pas en charge la lecture vidéo HTML5.
+              </video>
+            </div>
+          </div>
+
+          <div class="lg:col-span-5 space-y-4">
+            <div id="video-info-card" class="p-5 rounded-2xl bg-slate-800/90 border border-slate-700 space-y-3">
+              <span id="video-badge" class="inline-block text-xs font-extrabold px-3 py-1 rounded-full bg-amber-500/20 text-amber-300">
+                Séquence 01 • Élevage de Dindes
+              </span>
+              <h4 id="video-title" class="text-lg font-extrabold text-white">
+                Bâtiment de dindes blanches sur litière avec mangeoires & abreuvoirs
+              </h4>
+              <p id="video-desc" class="text-xs sm:text-sm text-slate-300 leading-relaxed">
+                Immersion au cœur du bâtiment d'élevage de dindes blanches sur litière, équipé d'abreuvoirs cloches et de mangeoires suspendues.
+              </p>
+              <div class="pt-2 flex flex-wrap gap-2.5">
+                <a href="#catalogue" onclick="filterCatalog('turkey')" class="px-4 py-2 rounded-xl bg-green-600 hover:bg-green-700 text-white font-bold text-xs">
+                  Voir les Dindes →
+                </a>
+                <a href="#outils-ia" class="px-4 py-2 rounded-xl bg-slate-700 hover:bg-slate-600 text-white font-bold text-xs">
+                  Calculer les besoins alimentaires
+                </a>
+              </div>
+            </div>
+
+            <div class="grid grid-cols-2 gap-3 text-xs">
+              <button onclick="selectVideo('assets/dindes-batiment.mp4', 1)" class="p-3.5 rounded-2xl bg-slate-800/60 hover:bg-slate-800 border border-slate-700 text-left transition cursor-pointer">
+                <div class="font-extrabold text-amber-400">dindes-batiment.mp4</div>
+                <div class="text-slate-300 mt-0.5">Dindes blanches & mangeoires • 02:24</div>
+              </button>
+              <button onclick="selectVideo('assets/controle-lot-jeunes.mp4', 2)" class="p-3.5 rounded-2xl bg-slate-800/60 hover:bg-slate-800 border border-slate-700 text-left transition cursor-pointer">
+                <div class="font-extrabold text-emerald-400">controle-lot-jeunes.mp4</div>
+                <div class="text-slate-300 mt-0.5">Contrôle lot jeunes sujets • 01:43</div>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SAVOIR-FAIRE -->
+  <section id="savoir-faire" class="py-16 sm:py-20 bg-slate-50 reveal">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-2xl mb-10">
+        <span class="text-xs font-extrabold uppercase tracking-wider text-green-700 bg-green-100 px-3 py-1 rounded-full">Savoir-Faire Terrain</span>
+        <h2 class="text-2xl sm:text-4xl font-extrabold text-slate-900 mt-3">Maîtrise complète de la chaîne avicole</h2>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <article class="bg-white rounded-2xl border border-slate-200 p-5 shadow-2xs hover:shadow-lg transition">
+          <div class="w-10 h-10 rounded-xl bg-amber-100 text-amber-700 font-extrabold flex items-center justify-center mb-4">01</div>
+          <h3 class="font-extrabold text-slate-900 text-base">Contrôle pondéral & suivi</h3>
+          <p class="text-xs text-slate-600 mt-2 leading-relaxed">
+            Suivi régulier du poids et de l'homogénéité des bandes (poulets de chair, dindes, poulet africain) pour sécuriser la qualité.
+          </p>
+        </article>
+        <article class="bg-white rounded-2xl border border-slate-200 p-5 shadow-2xs hover:shadow-lg transition">
+          <div class="w-10 h-10 rounded-xl bg-green-100 text-green-700 font-extrabold flex items-center justify-center mb-4">02</div>
+          <h3 class="font-extrabold text-slate-900 text-base">Poussins d'un jour & matériel</h3>
+          <p class="text-xs text-slate-600 mt-2 leading-relaxed">
+            Fourniture de poussins d'un jour, mangeoires, abreuvoirs et accompagnement pratique dès le démarrage.
+          </p>
+        </article>
+        <article class="bg-white rounded-2xl border border-slate-200 p-5 shadow-2xs hover:shadow-lg transition">
+          <div class="w-10 h-10 rounded-xl bg-slate-100 text-slate-800 font-extrabold flex items-center justify-center mb-4">03</div>
+          <h3 class="font-extrabold text-slate-900 text-base">Aliments MAYAS DISTRIBUTION</h3>
+          <p class="text-xs text-slate-600 mt-2 leading-relaxed">
+            Aliment Prédémarrage, Aliment de Croissance Chair et Aliment de Finition adaptés à chaque étape d'élevage.
+          </p>
+        </article>
+        <article class="bg-white rounded-2xl border border-slate-200 p-5 shadow-2xs hover:shadow-lg transition">
+          <div class="w-10 h-10 rounded-xl bg-emerald-100 text-emerald-700 font-extrabold flex items-center justify-center mb-4">04</div>
+          <h3 class="font-extrabold text-slate-900 text-base">Produit Halal & Conseil</h3>
+          <p class="text-xs text-slate-600 mt-2 leading-relaxed">
+            Respect strict de la conformité Halal, conseil technique avicole et réactivité pour particuliers, éleveurs et CHR.
+          </p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- CATALOGUE INTERACTIF -->
+  <section id="catalogue" class="py-16 sm:py-20 bg-white border-y border-slate-200/80 reveal">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-8">
+        <div>
+          <span class="text-xs font-extrabold uppercase tracking-wider text-green-700 bg-green-100 px-3 py-1 rounded-full">Catalogue Commercial</span>
+          <h2 class="text-2xl sm:text-4xl font-extrabold text-slate-900 mt-3">Aliments, Volailles & Équipements</h2>
+          <p class="text-slate-600 mt-1 text-sm">
+            Grille tarifaire active : <strong id="catalog-mode-text" class="text-green-700">Particulier B2C</strong>.
+          </p>
+        </div>
+
+        <div class="flex flex-wrap items-center gap-2.5">
+          <input id="catalog-search" oninput="renderCatalog()" type="text" placeholder="Rechercher un produit..." class="px-4 py-2.5 rounded-xl border border-slate-300 text-sm w-full sm:w-60 focus:outline-none focus:ring-2 focus:ring-green-500" />
+          <select id="format-filter" onchange="renderCatalog()" class="px-3.5 py-2.5 rounded-xl border border-slate-300 text-sm bg-white font-semibold focus:outline-none focus:ring-2 focus:ring-green-500">
+            <option value="all">Tous formats</option>
+            <option value="25kg">Sac 25 kg</option>
+            <option value="50kg">Sac 50 kg</option>
+            <option value="lot">Lot / Unité</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="flex flex-wrap gap-2 mb-8">
+        <button data-cat="all" onclick="filterCatalog('all')" class="cat-tab px-4 py-2 rounded-xl text-sm font-bold bg-green-600 text-white shadow-xs transition cursor-pointer">Tout voir</button>
+        <button data-cat="feed" onclick="filterCatalog('feed')" class="cat-tab px-4 py-2 rounded-xl text-sm font-bold bg-slate-100 text-slate-700 hover:bg-slate-200 transition cursor-pointer">Aliments Volaille</button>
+        <button data-cat="broiler" onclick="filterCatalog('broiler')" class="cat-tab px-4 py-2 rounded-xl text-sm font-bold bg-slate-100 text-slate-700 hover:bg-slate-200 transition cursor-pointer">Poulets de Chair</button>
+        <button data-cat="turkey" onclick="filterCatalog('turkey')" class="cat-tab px-4 py-2 rounded-xl text-sm font-bold bg-slate-100 text-slate-700 hover:bg-slate-200 transition cursor-pointer">Dindes & Volailles</button>
+        <button data-cat="chicks_gear" onclick="filterCatalog('chicks_gear')" class="cat-tab px-4 py-2 rounded-xl text-sm font-bold bg-slate-100 text-slate-700 hover:bg-slate-200 transition cursor-pointer">Poussins & Matériel</button>
+      </div>
+
+      <div id="catalog-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"></div>
+    </div>
+  </section>
+
+  <!-- MODULES IA MÉTIER -->
+  <section id="outils-ia" class="py-16 sm:py-20 bg-gradient-to-b from-slate-50 to-amber-50/40 reveal">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-3xl mb-10">
+        <span class="text-xs font-extrabold uppercase tracking-wider text-amber-800 bg-amber-100 px-3 py-1 rounded-full">Outils Décisionnels & IA</span>
+        <h2 class="text-2xl sm:text-4xl font-extrabold text-slate-900 mt-3">Calculateur alimentaire & Assistant avicole</h2>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+        <!-- Calculateur (7 cols) -->
+        <div class="lg:col-span-7 bg-white rounded-3xl p-6 sm:p-8 border border-slate-200 shadow-md">
+          <div class="flex items-center justify-between flex-wrap gap-2 mb-6">
+            <div>
+              <span class="text-xs font-bold text-green-700 uppercase">Outil 01 • Calculateur de Ration</span>
+              <h3 class="text-xl sm:text-2xl font-extrabold text-slate-900">Estimation des Sacs & Budget</h3>
+            </div>
+            <span class="text-xs font-bold bg-green-50 text-green-800 border border-green-200 px-3 py-1 rounded-full">Ajout direct panier</span>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div>
+              <label class="block text-xs font-bold text-slate-700 mb-1.5">Espèce avicole</label>
+              <select id="calc-species" onchange="calculateFeed()" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-sm font-semibold bg-white focus:ring-2 focus:ring-green-500">
+                <option value="broiler">Poulet de Chair</option>
+                <option value="turkey">Dinde</option>
+              </select>
+            </div>
+            <div>
+              <label class="block text-xs font-bold text-slate-700 mb-1.5">Nombre de sujets (têtes)</label>
+              <input id="calc-count" type="number" min="10" max="50000" value="250" oninput="calculateFeed()" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-sm font-bold focus:ring-2 focus:ring-green-500" />
+            </div>
+            <div>
+              <label class="block text-xs font-bold text-slate-700 mb-1.5">Semaine d'élevage (S1 - S10)</label>
+              <input id="calc-week" type="number" min="1" max="10" value="2" oninput="calculateFeed()" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-sm font-bold focus:ring-2 focus:ring-green-500" />
+            </div>
+            <div>
+              <label class="block text-xs font-bold text-slate-700 mb-1.5">Horizon de projection</label>
+              <select id="calc-days" onchange="calculateFeed()" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-sm font-semibold bg-white focus:ring-2 focus:ring-green-500">
+                <option value="7">7 jours (1 semaine)</option>
+                <option value="14" selected>14 jours (2 semaines)</option>
+                <option value="21">21 jours (3 semaines)</option>
+                <option value="35">35 jours (cycle complet)</option>
+              </select>
+            </div>
+            <div class="sm:col-span-2">
+              <label class="block text-xs font-bold text-slate-700 mb-1.5">Format de sac préféré</label>
+              <select id="calc-bag-size" onchange="calculateFeed()" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-sm font-semibold bg-white focus:ring-2 focus:ring-green-500">
+                <option value="50" selected>Sac de 50 kg (Éleveur / Pro)</option>
+                <option value="25">Sac de 25 kg (Petit lot / Prédémarrage)</option>
+              </select>
+            </div>
+          </div>
+
+          <div id="calc-result" class="mt-6 rounded-2xl bg-gradient-to-br from-green-50 to-amber-50/70 border border-green-200 p-5 space-y-4"></div>
+        </div>
+
+        <!-- Assistant RAG (5 cols) -->
+        <div class="lg:col-span-5 bg-white rounded-3xl p-6 border border-slate-200 shadow-md flex flex-col h-[520px]">
+          <div class="flex items-center justify-between border-b border-slate-100 pb-3.5">
+            <div>
+              <span class="text-xs font-bold text-amber-700 uppercase">Outil 02 • Conseiller Virtuel</span>
+              <h3 class="text-lg font-extrabold text-slate-900">Assistant Avicole MAYAS</h3>
+            </div>
+            <span class="inline-flex items-center gap-1.5 text-[11px] font-bold text-emerald-700 bg-emerald-100 px-2.5 py-1 rounded-full">
+              <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span> En ligne
+            </span>
+          </div>
+
+          <div class="flex flex-wrap gap-1.5 py-2.5 border-b border-slate-100">
+            <button onclick="askAssistant('Quelle différence entre aliment prédémarrage, croissance chair et finition ?')" class="text-[11px] font-semibold px-2.5 py-1 rounded-lg bg-slate-100 hover:bg-green-100 text-slate-700 hover:text-green-800 transition cursor-pointer">Phases alimentaires</button>
+            <button onclick="askAssistant('Quels sont vos contacts et services ?')" class="text-[11px] font-semibold px-2.5 py-1 rounded-lg bg-slate-100 hover:bg-green-100 text-slate-700 hover:text-green-800 transition cursor-pointer">Contacts & Services</button>
+            <button onclick="askAssistant('Forte mortalité sur mon lot, que faire ?')" class="text-[11px] font-semibold px-2.5 py-1 rounded-lg bg-amber-100 hover:bg-amber-200 text-amber-900 transition cursor-pointer">Alerte sanitaire</button>
+          </div>
+
+          <div id="chat-messages" class="flex-1 overflow-y-auto custom-scrollbar py-3 space-y-3 text-sm"></div>
+
+          <div class="pt-3 border-t border-slate-100 space-y-2">
+            <form onsubmit="handleChatSubmit(event)" class="flex gap-2">
+              <input id="chat-input" type="text" placeholder="Posez votre question..." class="flex-1 px-3.5 py-2.5 rounded-xl border border-slate-300 text-sm focus:outline-none focus:ring-2 focus:ring-green-500" />
+              <button type="submit" class="px-4 py-2.5 rounded-xl bg-green-600 hover:bg-green-700 text-white font-bold text-sm transition cursor-pointer">Envoyer</button>
+            </form>
+            <div class="flex items-center justify-between text-[11px] text-slate-500">
+              <span>Fiches techniques MAYAS</span>
+              <button onclick="escalateToHuman()" class="font-bold text-amber-700 hover:underline cursor-pointer">Parler à un conseiller →</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Onglets Réassort & Devis Express -->
+      <div class="mt-8 bg-white rounded-3xl p-6 sm:p-8 border border-slate-200 shadow-sm">
+        <div class="flex flex-wrap items-center justify-between gap-4 border-b border-slate-200 pb-4 mb-6">
+          <div class="flex gap-2">
+            <button id="tab-btn-reorder" onclick="switchSubTool('reorder')" class="px-4 py-2 rounded-xl text-xs sm:text-sm font-extrabold bg-slate-900 text-white transition cursor-pointer">
+              03 • Réassort Prédictif Stock
+            </button>
+            <button id="tab-btn-quote" onclick="switchSubTool('quote')" class="px-4 py-2 rounded-xl text-xs sm:text-sm font-extrabold bg-slate-100 text-slate-700 hover:bg-slate-200 transition cursor-pointer">
+              04 • Devis Express B2B / CHR
+            </button>
+          </div>
+          <span class="text-xs text-slate-500 font-medium">Anticipez vos réassorts ou demandez un devis volume</span>
+        </div>
+
+        <div id="panel-reorder" class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-center">
+          <div class="lg:col-span-7 grid grid-cols-1 sm:grid-cols-3 gap-3">
+            <div>
+              <label class="block text-xs font-bold text-slate-700 mb-1">Sacs en stock</label>
+              <input id="reorder-bags" type="number" min="1" max="2000" value="12" oninput="updateReorderForecast()" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-sm font-bold" />
+            </div>
+            <div>
+              <label class="block text-xs font-bold text-slate-700 mb-1">Poids / sac</label>
+              <select id="reorder-bag-kg" onchange="updateReorderForecast()" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-sm font-bold bg-white">
+                <option value="50" selected>50 kg</option>
+                <option value="25">25 kg</option>
+              </select>
+            </div>
+            <div>
+              <label class="block text-xs font-bold text-slate-700 mb-1">Conso. / jour (kg)</label>
+              <input id="reorder-daily-kg" type="number" min="5" max="10000" value="85" oninput="updateReorderForecast()" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-sm font-bold" />
+            </div>
+          </div>
+          <div id="reorder-result" class="lg:col-span-5 p-4 rounded-2xl bg-slate-50 border border-slate-200 text-sm"></div>
+        </div>
+
+        <div id="panel-quote" class="hidden">
+          <form onsubmit="generateStructuredQuote(event)" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-3">
+            <input id="lead-name" type="text" required placeholder="Nom / Ferme / CHR" class="px-3.5 py-2.5 rounded-xl border border-slate-300 text-sm" />
+            <input id="lead-phone" type="text" required placeholder="Téléphone / WhatsApp" class="px-3.5 py-2.5 rounded-xl border border-slate-300 text-sm" />
+            <select id="lead-need" class="px-3.5 py-2.5 rounded-xl border border-slate-300 text-sm bg-white">
+              <option value="Aliments (Sacs 25/50kg)">Aliments (Sacs)</option>
+              <option value="Poulets de Chair">Poulets de Chair</option>
+              <option value="Dindes & Volailles">Dindes / Volailles</option>
+              <option value="Poussins & Matériel">Poussins & Matériel</option>
+            </select>
+            <input id="lead-volume" type="text" required placeholder="Volume (ex: 50 sacs)" class="px-3.5 py-2.5 rounded-xl border border-slate-300 text-sm" />
+            <button type="submit" class="py-2.5 px-4 rounded-xl bg-amber-500 hover:bg-amber-600 text-slate-950 font-extrabold text-sm transition cursor-pointer">
+              Générer Devis →
+            </button>
+          </form>
+          <div id="quote-output" class="hidden mt-4 p-4 rounded-2xl bg-amber-50 border border-amber-200 text-xs text-slate-800 space-y-2"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT & DEVIS -->
+  <section id="contact-devis" class="py-16 sm:py-20 bg-slate-900 text-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
+        <div class="lg:col-span-5 space-y-5">
+          <span class="text-xs font-extrabold uppercase tracking-wider text-amber-400">Contact Direct</span>
+          <h2 class="text-2xl sm:text-4xl font-extrabold leading-tight">Commandez ou planifiez votre approvisionnement</h2>
+          <p class="text-slate-300 text-sm leading-relaxed">
+            <strong>MAYAS VOLAILLE</strong> (CHEPITIMAYAS AGRI SARL / MAYAS DISTRIBUTION) répond aux particuliers, fermes et professionnels CHR.
+          </p>
+          <div class="p-4 rounded-2xl bg-slate-800/90 border border-slate-700 text-sm space-y-1.5">
+            <div class="text-xs text-slate-400 font-semibold">Lignes Commerciales & WhatsApp</div>
+            <div class="font-bold">01.52.56.33.93 • 07.77.09.30.69 • 07.59.05.80.25</div>
+            <div class="text-emerald-400 font-semibold">WhatsApp : +225 07 77 09 30 69</div>
+            <div class="text-amber-400 text-xs pt-1">chepitimayasagrisarl@gmail.com • mayasvolaille@gmail.com</div>
+          </div>
+        </div>
+
+        <div class="lg:col-span-7 bg-white text-slate-900 rounded-3xl p-6 sm:p-8 shadow-xl">
+          <h3 class="text-xl font-extrabold mb-4">Envoyer une demande commerciale</h3>
+          <form onsubmit="submitContactForm(event)" class="space-y-4">
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <input id="contact-name" type="text" required placeholder="Nom complet / Entreprise" class="w-full px-4 py-2.5 rounded-xl border border-slate-300 text-sm" />
+              <input id="contact-info" type="text" required placeholder="Téléphone ou Email" class="w-full px-4 py-2.5 rounded-xl border border-slate-300 text-sm" />
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <select id="contact-profile" class="w-full px-4 py-2.5 rounded-xl border border-slate-300 text-sm bg-white">
+                <option value="Éleveur professionnel">Éleveur professionnel</option>
+                <option value="Revendeur / Distributeur">Revendeur / Distributeur</option>
+                <option value="Restaurateur / CHR">Restaurateur / CHR</option>
+                <option value="Client particulier">Client particulier</option>
+              </select>
+              <select id="contact-subject" class="w-full px-4 py-2.5 rounded-xl border border-slate-300 text-sm bg-white">
+                <option value="Devis aliments (25kg / 50kg)">Devis aliments (25kg / 50kg)</option>
+                <option value="Commande poulets de chair / dindes">Commande poulets / dindes</option>
+                <option value="Poussins & matériel">Poussins & matériel</option>
+              </select>
+            </div>
+            <textarea id="contact-message" rows="3" required placeholder="Quantités, commune de livraison, date souhaitée..." class="w-full px-4 py-2.5 rounded-xl border border-slate-300 text-sm"></textarea>
+            <button type="submit" class="w-full py-3.5 rounded-xl bg-green-600 hover:bg-green-700 text-white font-bold text-sm shadow-md transition cursor-pointer">
+              Envoyer la Demande
+            </button>
+          </form>
+          <div id="contact-confirmation" class="hidden mt-4 p-4 rounded-2xl bg-green-50 border border-green-200 text-green-900 text-sm font-medium"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-slate-950 text-slate-400 py-8 border-t border-slate-800 text-xs">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4">
+      <div><strong class="text-white">MAYAS VOLAILLE</strong> • CHEPITIMAYAS AGRI SARL • MAYAS DISTRIBUTION</div>
+      <div>01.52.56.33.93 • 07.77.09.30.69 • 07.59.05.80.25 • www.mayasvolaille.com</div>
+    </div>
+  </footer>
+
+  <!-- LIGHTBOX MODAL FOR PHOTOS & POSTERS -->
+  <div id="lightbox-modal" onclick="if(event.target===this) closeLightbox()" class="fixed inset-0 z-50 hidden items-center justify-center p-4 bg-slate-950/85 backdrop-blur-xs">
+    <div class="bg-white rounded-3xl max-w-2xl w-full p-4 sm:p-6 shadow-2xl space-y-3">
+      <div class="flex items-center justify-between gap-2">
+        <h3 id="lightbox-title" class="text-sm sm:text-base font-extrabold text-slate-900"></h3>
+        <button onclick="closeLightbox()" class="p-2 rounded-xl hover:bg-slate-100 text-slate-700 font-bold cursor-pointer">✕</button>
+      </div>
+      <div class="max-h-[75vh] overflow-y-auto rounded-2xl border border-slate-200 bg-slate-50">
+        <img id="lightbox-img" src="" alt="" class="w-full h-auto object-contain mx-auto" />
+      </div>
+    </div>
+  </div>
+
+  <!-- PRODUCT DETAILS MODAL -->
+  <div id="product-modal" onclick="if(event.target===this) closeProductModal()" class="fixed inset-0 z-50 hidden items-center justify-center p-4 bg-slate-950/60 backdrop-blur-2xs">
+    <div id="product-modal-content" class="bg-white rounded-3xl max-w-lg w-full p-6 shadow-2xl space-y-4"></div>
+  </div>
+
+  <!-- SLIDE-OVER SHOPPING CART DRAWER -->
+  <div id="cart-backdrop" onclick="toggleCart(false)" class="fixed inset-0 bg-slate-950/50 backdrop-blur-2xs z-50 hidden"></div>
+  <aside id="cart-drawer" class="fixed top-0 right-0 h-full w-full max-w-md bg-white z-50 shadow-2xl transform translate-x-full transition-transform duration-300 flex flex-col">
+    <div class="p-5 border-b border-slate-200 flex items-center justify-between">
+      <div>
+        <h3 class="text-lg font-extrabold text-slate-900">Votre Panier</h3>
+        <p id="cart-mode-subtitle" class="text-xs text-green-700 font-bold">Profil actif : Particulier (B2C)</p>
+      </div>
+      <button onclick="toggleCart(false)" class="p-2 rounded-xl hover:bg-slate-100 text-slate-600 cursor-pointer">✕</button>
+    </div>
+
+    <div id="delivery-progress-box" class="px-5 py-2.5 bg-green-50 border-b border-green-100 text-xs text-green-900"></div>
+    <div id="cart-items" class="flex-1 overflow-y-auto custom-scrollbar p-5 space-y-3"></div>
+
+    <div class="p-5 border-t border-slate-200 bg-slate-50 space-y-3">
+      <div class="grid grid-cols-2 gap-2.5">
+        <div>
+          <label class="block text-[11px] font-bold text-slate-700 mb-1">Livraison</label>
+          <select id="delivery-zone" onchange="renderCart()" class="w-full px-2.5 py-2 rounded-xl border border-slate-300 text-xs font-semibold bg-white">
+            <option value="pickup" data-fee="0">Retrait ferme (0 FCFA)</option>
+            <option value="local" data-fee="2500">Urbain (+2 500 FCFA)</option>
+            <option value="regional" data-fee="6000">Régional (+6 000 FCFA)</option>
+          </select>
+        </div>
+        <div>
+          <label class="block text-[11px] font-bold text-slate-700 mb-1">Paiement</label>
+          <select id="payment-method" class="w-full px-2.5 py-2 rounded-xl border border-slate-300 text-xs font-semibold bg-white">
+            <option value="Mobile Money">Mobile Money</option>
+            <option value="Paiement à la livraison">À la livraison</option>
+            <option value="Bon de Commande Pro">Bon Pro (B2B)</option>
+          </select>
+        </div>
+      </div>
+
+      <div id="min-order-notice" class="hidden text-xs font-semibold text-amber-800 bg-amber-100 border border-amber-200 px-3 py-2 rounded-xl"></div>
+
+      <div class="space-y-1 text-xs sm:text-sm">
+        <div class="flex justify-between text-slate-600"><span>Sous-total</span><span id="cart-subtotal" class="font-bold text-slate-900">0 FCFA</span></div>
+        <div class="flex justify-between text-slate-600"><span>Livraison</span><span id="cart-delivery" class="font-bold text-slate-900">0 FCFA</span></div>
+        <div class="flex justify-between text-base font-extrabold text-slate-900 pt-1.5 border-t border-slate-200">
+          <span>Total estimé</span><span id="cart-total" class="text-green-700">0 FCFA</span>
+        </div>
+      </div>
+
+      <button id="checkout-btn" onclick="placeOrder()" class="w-full py-3 rounded-xl bg-green-600 hover:bg-green-700 disabled:bg-slate-300 disabled:cursor-not-allowed text-white font-bold text-sm shadow-md transition cursor-pointer">
+        Valider la Commande
+      </button>
+    </div>
+  </aside>
+
+  <!-- ORDERS TRACKING MODAL -->
+  <div id="orders-modal" onclick="if(event.target===this) closeOrdersModal()" class="fixed inset-0 z-50 hidden items-center justify-center p-4 bg-slate-950/60 backdrop-blur-2xs">
+    <div class="bg-white rounded-3xl max-w-2xl w-full max-h-[85vh] flex flex-col shadow-2xl overflow-hidden">
+      <div class="p-5 border-b border-slate-200 flex items-center justify-between">
+        <div>
+          <h3 class="text-lg font-extrabold text-slate-900">Suivi de Commandes</h3>
+          <p class="text-xs text-slate-500">En attente → Confirmée → En préparation → En livraison → Livrée</p>
+        </div>
+        <button onclick="closeOrdersModal()" class="p-2 rounded-xl hover:bg-slate-100 text-slate-600 cursor-pointer">✕</button>
+      </div>
+      <div id="orders-list" class="p-5 overflow-y-auto custom-scrollbar space-y-4 flex-1"></div>
+    </div>
+  </div>
+
+  <script>
+    let currentMode = 'b2c';
+    let currentCategory = 'all';
+    let cart = [];
+    let orders = [];
+    const cardQuantities = {};
+
+    const ORDER_STATUSES = ['En attente', 'Confirmée', 'En préparation', 'En livraison', 'Livrée'];
+
+    const PRODUCTS = [
+      {
+        id: 'feed-predem-25', category: 'feed', format: '25kg', badge: 'Aliment Prédémarrage',
+        name: 'Aliment Prédémarrage — Sac 25 kg', subtitle: 'MAYAS DISTRIBUTION • Phase J1 à J14',
+        desc: 'Formule riche en protéines digestes et énergie pour un démarrage vigoureux des poussins et dindonneaux.',
+        specs: 'Protéines : ~22% • Énergie : ~3 000 kcal/kg • Sac 25 kg',
+        usage: 'Distribuer à volonté dès l’arrivée sous bâche dans des mangeoires 1er âge.',
+        priceB2C: 11500, priceB2B: 10800, unitLabel: 'sac 25 kg', stock: 85
+      },
+      {
+        id: 'feed-croissance-50', category: 'feed', format: '50kg', badge: 'Aliment Croissance Chair',
+        name: 'Aliment de Croissance Chair — Sac 50 kg', subtitle: 'MAYAS DISTRIBUTION • Développement musculaire',
+        desc: 'Aliment complet calibré pour optimiser le gain de poids et l’indice de consommation.',
+        specs: 'Protéines : ~20% • Énergie : ~3 100 kcal/kg • Sac 50 kg',
+        usage: 'Transition progressive sur 3 jours après le prédémarrage.',
+        priceB2C: 21500, priceB2B: 20200, unitLabel: 'sac 50 kg', stock: 140
+      },
+      {
+        id: 'feed-finition-50', category: 'feed', format: '50kg', badge: 'Aliment Finition',
+        name: 'Aliment de Finition — Sac 50 kg', subtitle: 'MAYAS DISTRIBUTION • Poids final & qualité chair',
+        desc: 'Conçu pour la dernière phase d’élevage afin de sécuriser le poids final et la tendreté.',
+        specs: 'Protéines : ~18,5% • Énergie : ~3 200 kcal/kg • Sac 50 kg',
+        usage: 'De J29 jusqu’à la commercialisation.',
+        priceB2C: 21000, priceB2B: 19800, unitLabel: 'sac 50 kg', stock: 110
+      },
+      {
+        id: 'broiler-lot-25', category: 'broiler', format: 'lot', badge: 'Poulets Chair • Halal',
+        name: 'Lot de 25 Poulets de Chair Calibrés', subtitle: 'Suivi en ferme • Conformité Halal',
+        desc: 'Poulets de chair élevés dans des bâtiments aérés avec suivi pondéral régulier.',
+        specs: 'Poids moyen : ~2,1 à 2,4 kg • Lot de 25 sujets',
+        usage: 'Idéal revendeurs, événements et restauration CHR.',
+        priceB2C: 62500, priceB2B: 58000, unitLabel: 'lot (25 têtes)', stock: 18
+      },
+      {
+        id: 'broiler-african-unit', category: 'broiler', format: 'lot', badge: 'Poulet Africain',
+        name: 'Poulet Africain Fermier — Unité', subtitle: 'Chair ferme & savoureuse • Halal',
+        desc: 'Volaille appréciée pour sa tenue à la cuisson et son goût authentique.',
+        specs: 'Format unitaire • Produit Halal',
+        usage: 'Disponible selon stock de ferme.',
+        priceB2C: 3500, priceB2B: 3100, unitLabel: 'unité', stock: 95
+      },
+      {
+        id: 'turkey-white-unit', category: 'turkey', format: 'lot', badge: 'Dinde Blanche • Halal',
+        name: 'Dinde Blanche d’Élevage', subtitle: 'Pesée contrôlée sur balance Wadfow • Halal',
+        desc: 'Dinde blanche élevée avec soin pour fêtes, tables familiales et restauration.',
+        specs: 'Pesée contrôlée ~4,5 à 6,5 kg • Halal',
+        usage: 'Réservation conseillée pour les lots et événements.',
+        priceB2C: 16500, priceB2B: 14800, unitLabel: 'sujet', stock: 24
+      },
+      {
+        id: 'chicks-day-old-100', category: 'chicks_gear', format: 'lot', badge: 'Poussins d’un Jour',
+        name: 'Lot de 100 Poussins d’un Jour', subtitle: 'Protocole démarrage inclus',
+        desc: 'Poussins sélectionnés pour leur vitalité initiale avec repère de conduite.',
+        specs: 'Lot de 100 poussins • Souche chair performante',
+        usage: 'Préchauffer le bâtiment sous bâche avant réception.',
+        priceB2C: 55000, priceB2B: 51000, unitLabel: 'lot (100)', stock: 20
+      },
+      {
+        id: 'gear-feeders-pack', category: 'chicks_gear', format: 'lot', badge: 'Matériel & Conseil',
+        name: 'Pack Mangeoires & Abreuvoirs + Conseil', subtitle: 'Équipement d’élevage & accompagnement',
+        desc: 'Ensemble d’abreuvoirs cloches et mangeoires avec séance de conseil pratique.',
+        specs: 'Matériel durable • Conseil avicole inclus',
+        usage: 'Adapté aux bandes de 100 à 300 sujets.',
+        priceB2C: 24000, priceB2B: 21500, unitLabel: 'pack', stock: 30
+      }
+    ];
+
+    function selectVideo(src, num) {
+      const player = document.getElementById('farm-video-player');
+      player.src = src;
+      player.load();
+      player.play().catch(() => {});
+
+      const btn1 = document.getElementById('vid-tab-1');
+      const btn2 = document.getElementById('vid-tab-2');
+      btn1.className = num === 1
+        ? 'px-4 py-2 rounded-xl text-xs sm:text-sm font-extrabold bg-amber-500 text-slate-950 transition cursor-pointer'
+        : 'px-4 py-2 rounded-xl text-xs sm:text-sm font-extrabold bg-slate-800 hover:bg-slate-700 text-slate-200 transition cursor-pointer';
+      btn2.className = num === 2
+        ? 'px-4 py-2 rounded-xl text-xs sm:text-sm font-extrabold bg-amber-500 text-slate-950 transition cursor-pointer'
+        : 'px-4 py-2 rounded-xl text-xs sm:text-sm font-extrabold bg-slate-800 hover:bg-slate-700 text-slate-200 transition cursor-pointer';
+
+      const badge = document.getElementById('video-badge');
+      const title = document.getElementById('video-title');
+      const desc = document.getElementById('video-desc');
+
+      if (num === 1) {
+        badge.textContent = 'Séquence 01 • Élevage de Dindes';
+        title.textContent = 'Bâtiment de dindes blanches sur litière avec mangeoires & abreuvoirs';
+        desc.textContent = 'Immersion au cœur du bâtiment d\'élevage de dindes blanches sur litière, équipé d\'abreuvoirs cloches et de mangeoires suspendues.';
+      } else {
+        badge.textContent = 'Séquence 02 • Contrôle de Lot';
+        title.textContent = 'Observation d\'un lot de jeunes sujets en bâtiment et contrôle de croissance';
+        desc.textContent = 'Suivi terrain de l\'évolution d\'un lot en bâtiment d\'élevage, vérification de la croissance, de l\'alimentation et des mangeoires.';
+      }
+    }
+
+    function openLightbox(src, title) {
+      document.getElementById('lightbox-img').src = src;
+      document.getElementById('lightbox-title').textContent = title;
+      const modal = document.getElementById('lightbox-modal');
+      modal.classList.remove('hidden');
+      modal.classList.add('flex');
+    }
+
+    function closeLightbox() {
+      const modal = document.getElementById('lightbox-modal');
+      modal.classList.add('hidden');
+      modal.classList.remove('flex');
+    }
+
+    function showToast(message, type = 'success') {
+      const container = document.getElementById('toast-container');
+      const el = document.createElement('div');
+      const bg = type === 'error' ? 'bg-red-600 text-white' : 'bg-slate-900 text-white border border-green-500/40';
+      el.className = `pointer-events-auto px-4 py-3 rounded-2xl shadow-xl text-xs sm:text-sm font-bold flex items-center justify-between gap-3 ${bg}`;
+      el.innerHTML = `<span>${message}</span><button onclick="this.parentElement.remove()" class="opacity-75 hover:opacity-100 cursor-pointer">✕</button>`;
+      container.appendChild(el);
+      setTimeout(() => el.remove(), 3400);
+    }
+
+    function setClientMode(mode) {
+      currentMode = mode;
+      const isB2B = mode === 'b2b';
+      document.getElementById('btn-mode-b2c').className = isB2B ? 'px-3.5 py-1.5 rounded-full text-slate-600 hover:text-slate-900 transition cursor-pointer' : 'px-3.5 py-1.5 rounded-full bg-green-600 text-white shadow-xs transition cursor-pointer';
+      document.getElementById('btn-mode-b2b').className = isB2B ? 'px-3.5 py-1.5 rounded-full bg-amber-500 text-slate-950 shadow-xs transition cursor-pointer' : 'px-3.5 py-1.5 rounded-full text-slate-600 hover:text-slate-900 transition cursor-pointer';
+      document.getElementById('m-mode-b2c').className = isB2B ? 'px-3 py-1 rounded-lg text-slate-700 text-xs font-semibold' : 'px-3 py-1 rounded-lg bg-green-600 text-white text-xs font-semibold';
+      document.getElementById('m-mode-b2b').className = isB2B ? 'px-3 py-1 rounded-lg bg-amber-500 text-slate-950 text-xs font-semibold' : 'px-3 py-1 rounded-lg text-slate-700 text-xs font-semibold';
+
+      document.getElementById('active-mode-label').textContent = isB2B ? 'Éleveur / Revendeur / CHR (B2B) — Tarifs préférentiels' : 'Client Particulier (B2C) — Achat direct & livraison rapide';
+      document.getElementById('switch-mode-target').textContent = isB2B ? 'Particulier (B2C)' : 'Éleveur / Pro (B2B)';
+      document.getElementById('catalog-mode-text').textContent = isB2B ? 'Éleveur / Pro B2B' : 'Particulier B2C';
+      document.getElementById('cart-mode-subtitle').textContent = isB2B ? 'Profil actif : Éleveur / Pro (B2B)' : 'Profil actif : Particulier (B2C)';
+
+      renderCatalog();
+      renderCart();
+      calculateFeed();
+      showToast(isB2B ? 'Tarifs Éleveur / Pro (B2B) activés.' : 'Tarifs Particulier (B2C) activés.');
+    }
+
+    function toggleMobileMenu() {
+      const menu = document.getElementById('mobile-menu');
+      const isHidden = menu.classList.contains('hidden');
+      menu.classList.toggle('hidden', !isHidden);
+      document.getElementById('menu-icon-open').classList.toggle('hidden', isHidden);
+      document.getElementById('menu-icon-close').classList.toggle('hidden', !isHidden);
+    }
+
+    function formatPrice(amount) {
+      return new Intl.NumberFormat('fr-FR').format(Math.round(amount)) + ' FCFA';
+    }
+
+    function filterCatalog(cat) {
+      currentCategory = cat;
+      document.querySelectorAll('.cat-tab').forEach(btn => {
+        const active = btn.dataset.cat === cat;
+        btn.className = active ? 'cat-tab px-4 py-2 rounded-xl text-sm font-bold bg-green-600 text-white shadow-xs transition cursor-pointer' : 'cat-tab px-4 py-2 rounded-xl text-sm font-bold bg-slate-100 text-slate-700 hover:bg-slate-200 transition cursor-pointer';
+      });
+      renderCatalog();
+    }
+
+    function adjustCardQty(id, delta) {
+      cardQuantities[id] = Math.max(1, (cardQuantities[id] || 1) + delta);
+      const span = document.getElementById(`card-qty-${id}`);
+      if (span) span.textContent = cardQuantities[id];
+    }
+
+    function openProductModal(id) {
+      const p = PRODUCTS.find(x => x.id === id);
+      if (!p) return;
+      const price = currentMode === 'b2b' ? p.priceB2B : p.priceB2C;
+      const modal = document.getElementById('product-modal');
+      document.getElementById('product-modal-content').innerHTML = `
+        <div class="flex items-start justify-between gap-3">
+          <span class="text-xs font-extrabold px-3 py-1 rounded-full bg-green-100 text-green-800">${p.badge}</span>
+          <button onclick="closeProductModal()" class="p-1.5 rounded-lg hover:bg-slate-100 text-slate-500 cursor-pointer">✕</button>
+        </div>
+        <div>
+          <h3 class="text-xl font-extrabold text-slate-900">${p.name}</h3>
+          <p class="text-xs font-bold text-green-700 mt-0.5">${p.subtitle}</p>
+        </div>
+        <p class="text-sm text-slate-600 leading-relaxed">${p.desc}</p>
+        <div class="p-3.5 rounded-2xl bg-slate-50 border border-slate-200 space-y-1.5 text-xs">
+          <div><strong>Spécifications :</strong> ${p.specs}</div>
+          <div><strong>Conseil d'utilisation :</strong> ${p.usage}</div>
+          <div><strong>Disponibilité :</strong> ${p.stock} unités en stock</div>
+        </div>
+        <div class="flex items-center justify-between pt-2 border-t border-slate-100">
+          <div>
+            <div class="text-xs text-slate-500">Prix unitaire (${currentMode.toUpperCase()})</div>
+            <div class="text-xl font-extrabold text-slate-900">${formatPrice(price)}</div>
+          </div>
+          <button onclick="addToCart('${p.id}', 1); closeProductModal();" class="px-5 py-3 rounded-xl bg-green-600 hover:bg-green-700 text-white font-bold text-sm cursor-pointer">
+            Ajouter au panier
+          </button>
+        </div>
+      `;
+      modal.classList.remove('hidden');
+      modal.classList.add('flex');
+    }
+
+    function closeProductModal() {
+      const modal = document.getElementById('product-modal');
+      modal.classList.add('hidden');
+      modal.classList.remove('flex');
+    }
+
+    function renderCatalog() {
+      const search = (document.getElementById('catalog-search').value || '').toLowerCase().trim();
+      const formatFilter = document.getElementById('format-filter').value;
+      const grid = document.getElementById('catalog-grid');
+
+      const filtered = PRODUCTS.filter(p => {
+        const matchesCat = currentCategory === 'all' || p.category === currentCategory;
+        const matchesFormat = formatFilter === 'all' || p.format === formatFilter;
+        const matchesSearch = !search || p.name.toLowerCase().includes(search) || p.desc.toLowerCase().includes(search);
+        return matchesCat && matchesFormat && matchesSearch;
+      });
+
+      grid.innerHTML = filtered.map(prod => {
+        const price = currentMode === 'b2b' ? prod.priceB2B : prod.priceB2C;
+        const savings = prod.priceB2C - prod.priceB2B;
+        const qty = cardQuantities[prod.id] || 1;
+        return `
+          <div class="bg-white rounded-2xl border border-slate-200 hover:border-green-500 p-5 shadow-2xs hover:shadow-lg transition-all flex flex-col justify-between group">
+            <div>
+              <div class="flex items-center justify-between gap-2 mb-3">
+                <span class="text-xs font-extrabold px-2.5 py-1 rounded-full ${prod.category === 'feed' ? 'bg-amber-100 text-amber-800' : 'bg-green-100 text-green-800'}">${prod.badge}</span>
+                <button onclick="openProductModal('${prod.id}')" class="text-xs font-bold text-slate-500 hover:text-green-700 underline cursor-pointer">Fiche technique</button>
+              </div>
+              <h3 class="text-lg font-extrabold text-slate-900 group-hover:text-green-700 transition">${prod.name}</h3>
+              <p class="text-xs font-semibold text-slate-500 mt-0.5">${prod.subtitle}</p>
+              <p class="text-xs text-slate-600 mt-2.5 leading-relaxed">${prod.desc}</p>
+              ${currentMode === 'b2b' && savings > 0 ? `<div class="mt-2.5 inline-block text-[11px] font-bold text-amber-800 bg-amber-50 border border-amber-200 px-2.5 py-0.5 rounded-lg">Remise Pro : -${formatPrice(savings)} / ${prod.unitLabel}</div>` : ''}
+            </div>
+
+            <div class="mt-5 pt-4 border-t border-slate-100 space-y-3">
+              <div class="flex items-center justify-between">
+                <div>
+                  <div class="text-[11px] text-slate-500">${prod.unitLabel}</div>
+                  <div class="text-lg font-extrabold text-slate-900">${formatPrice(price)}</div>
+                </div>
+                <div class="flex items-center bg-slate-100 rounded-xl p-1 border border-slate-200">
+                  <button onclick="adjustCardQty('${prod.id}', -1)" class="w-7 h-7 rounded-lg hover:bg-white font-extrabold text-slate-700 cursor-pointer">-</button>
+                  <span id="card-qty-${prod.id}" class="w-7 text-center text-xs font-extrabold">${qty}</span>
+                  <button onclick="adjustCardQty('${prod.id}', 1)" class="w-7 h-7 rounded-lg hover:bg-white font-extrabold text-slate-700 cursor-pointer">+</button>
+                </div>
+              </div>
+              <button onclick="addToCart('${prod.id}', cardQuantities['${prod.id}'] || 1)" class="w-full py-2.5 rounded-xl bg-green-600 hover:bg-green-700 text-white font-bold text-xs sm:text-sm transition cursor-pointer">
+                + Ajouter au panier
+              </button>
+            </div>
+          </div>
+        `;
+      }).join('');
+    }
+
+    function toggleCart(open) {
+      const backdrop = document.getElementById('cart-backdrop');
+      const drawer = document.getElementById('cart-drawer');
+      if (open) {
+        backdrop.classList.remove('hidden');
+        requestAnimationFrame(() => drawer.classList.remove('translate-x-full'));
+      } else {
+        drawer.classList.add('translate-x-full');
+        setTimeout(() => backdrop.classList.add('hidden'), 280);
+      }
+    }
+
+    function addToCart(productId, qty = 1) {
+      const prod = PRODUCTS.find(p => p.id === productId);
+      if (!prod) return;
+      const existing = cart.find(item => item.id === productId);
+      if (existing) existing.qty += qty;
+      else cart.push({ id: productId, qty });
+      renderCart();
+      showToast(`${prod.name} (x${qty}) ajouté au panier.`);
+    }
+
+    function updateCartQty(productId, delta) {
+      const idx = cart.findIndex(item => item.id === productId);
+      if (idx === -1) return;
+      cart[idx].qty += delta;
+      if (cart[idx].qty <= 0) cart.splice(idx, 1);
+      renderCart();
+    }
+
+    function renderCart() {
+      const container = document.getElementById('cart-items');
+      const totalQty = cart.reduce((acc, item) => acc + item.qty, 0);
+      document.getElementById('cart-count').textContent = totalQty;
+
+      const progBox = document.getElementById('delivery-progress-box');
+      if (totalQty >= 10) {
+        progBox.innerHTML = `🎉 <strong>Remise volume débloquée :</strong> -30% sur les frais de livraison appliquée !`;
+      } else {
+        const remaining = 10 - totalQty;
+        progBox.innerHTML = `Plus que <strong>${remaining} article(s)</strong> pour débloquer <strong>-30% sur la livraison</strong>.`;
+      }
+
+      if (cart.length === 0) {
+        container.innerHTML = `<div class="text-center py-14 text-slate-500 text-sm">Votre panier est vide.</div>`;
+        document.getElementById('cart-subtotal').textContent = '0 FCFA';
+        document.getElementById('cart-delivery').textContent = '0 FCFA';
+        document.getElementById('cart-total').textContent = '0 FCFA';
+        document.getElementById('min-order-notice').classList.add('hidden');
+        document.getElementById('checkout-btn').disabled = true;
+        return;
+      }
+
+      let subtotal = 0;
+      container.innerHTML = cart.map(item => {
+        const prod = PRODUCTS.find(p => p.id === item.id);
+        const unitPrice = currentMode === 'b2b' ? prod.priceB2B : prod.priceB2C;
+        subtotal += unitPrice * item.qty;
+        return `
+          <div class="flex items-center justify-between gap-3 p-3 rounded-2xl border border-slate-200 bg-white">
+            <div class="min-w-0">
+              <div class="text-sm font-bold text-slate-900 truncate">${prod.name}</div>
+              <div class="text-xs text-slate-500">${formatPrice(unitPrice)} / ${prod.unitLabel}</div>
+            </div>
+            <div class="flex items-center gap-2 shrink-0">
+              <button onclick="updateCartQty('${prod.id}', -1)" class="w-7 h-7 rounded-lg bg-slate-100 font-bold cursor-pointer">-</button>
+              <span class="text-sm font-extrabold w-6 text-center">${item.qty}</span>
+              <button onclick="updateCartQty('${prod.id}', 1)" class="w-7 h-7 rounded-lg bg-slate-100 font-bold cursor-pointer">+</button>
+            </div>
+          </div>
+        `;
+      }).join('');
+
+      const zoneSelect = document.getElementById('delivery-zone');
+      const baseFee = Number(zoneSelect.options[zoneSelect.selectedIndex].dataset.fee || 0);
+      const deliveryFee = baseFee > 0 && totalQty >= 10 ? Math.round(baseFee * 0.7) : baseFee;
+      const minOrder = currentMode === 'b2b' ? 50000 : 10000;
+      const notice = document.getElementById('min-order-notice');
+      const checkoutBtn = document.getElementById('checkout-btn');
+
+      if (subtotal < minOrder) {
+        notice.classList.remove('hidden');
+        notice.textContent = `Minimum de commande ${currentMode.toUpperCase()} : ${formatPrice(minOrder)}.`;
+        checkoutBtn.disabled = true;
+      } else {
+        notice.classList.add('hidden');
+        checkoutBtn.disabled = false;
+      }
+
+      document.getElementById('cart-subtotal').textContent = formatPrice(subtotal);
+      document.getElementById('cart-delivery').textContent = formatPrice(deliveryFee);
+      document.getElementById('cart-total').textContent = formatPrice(subtotal + deliveryFee);
+    }
+
+    function placeOrder() {
+      const subtotal = cart.reduce((sum, item) => {
+        const prod = PRODUCTS.find(p => p.id === item.id);
+        return sum + ((currentMode === 'b2b' ? prod.priceB2B : prod.priceB2C) * item.qty);
+      }, 0);
+      const zoneSelect = document.getElementById('delivery-zone');
+      const deliveryFee = Number(zoneSelect.options[zoneSelect.selectedIndex].dataset.fee || 0);
+      const payment = document.getElementById('payment-method').value;
+      const orderId = 'MV-' + Math.floor(100000 + Math.random() * 900000);
+
+      orders.unshift({
+        id: orderId,
+        date: new Date().toLocaleString('fr-FR'),
+        mode: currentMode.toUpperCase(),
+        payment,
+        total: subtotal + deliveryFee,
+        statusIndex: 1,
+        items: cart.map(i => `${PRODUCTS.find(p => p.id === i.id).name} x${i.qty}`)
+      });
+
+      cart = [];
+      renderCart();
+      const badge = document.getElementById('orders-badge');
+      badge.textContent = orders.length;
+      badge.classList.remove('hidden');
+      toggleCart(false);
+      showToast(`Commande ${orderId} confirmée !`);
+      openOrdersModal();
+    }
+
+    function openOrdersModal() {
+      const list = document.getElementById('orders-list');
+      list.innerHTML = orders.length === 0
+        ? `<div class="text-center py-10 text-slate-500 text-sm">Aucune commande enregistrée.</div>`
+        : orders.map(ord => `
+          <div class="p-4 rounded-2xl border border-slate-200 bg-slate-50 space-y-2">
+            <div class="flex justify-between items-center">
+              <span class="font-extrabold text-sm">${ord.id} (${ord.mode})</span>
+              <span class="text-xs font-bold px-2.5 py-1 rounded-full bg-green-100 text-green-800">${ORDER_STATUSES[ord.statusIndex]}</span>
+            </div>
+            <div class="text-xs text-slate-600">${ord.items.join(' • ')}</div>
+            <div class="flex justify-between items-center text-xs pt-2 border-t border-slate-200">
+              <span>Total : <strong>${formatPrice(ord.total)}</strong></span>
+              ${ord.statusIndex < ORDER_STATUSES.length - 1 ? `<button onclick="advanceOrder('${ord.id}')" class="px-2.5 py-1 rounded-lg bg-amber-500 text-slate-950 font-bold cursor-pointer">Étape suivante →</button>` : `<span class="text-emerald-700 font-bold">✓ Livrée</span>`}
+            </div>
+          </div>
+        `).join('');
+      const modal = document.getElementById('orders-modal');
+      modal.classList.remove('hidden');
+      modal.classList.add('flex');
+    }
+
+    function advanceOrder(id) {
+      const ord = orders.find(o => o.id === id);
+      if (ord && ord.statusIndex < ORDER_STATUSES.length - 1) {
+        ord.statusIndex++;
+        openOrdersModal();
+      }
+    }
+
+    function closeOrdersModal() {
+      const modal = document.getElementById('orders-modal');
+      modal.classList.add('hidden');
+      modal.classList.remove('flex');
+    }
+
+    function calculateFeed() {
+      const species = document.getElementById('calc-species').value;
+      const count = Math.max(1, Number(document.getElementById('calc-count').value || 0));
+      const week = Math.min(10, Math.max(1, Number(document.getElementById('calc-week').value || 1)));
+      const days = Number(document.getElementById('calc-days').value || 14);
+      const bagKg = Number(document.getElementById('calc-bag-size').value || 50);
+
+      let dailyKg = species === 'broiler'
+        ? (week <= 2 ? 0.042 : week <= 4 ? 0.115 : 0.155)
+        : (week <= 3 ? 0.065 : week <= 6 ? 0.165 : 0.220);
+
+      let phaseName = species === 'broiler'
+        ? (week <= 2 ? 'Aliment Prédémarrage' : week <= 4 ? 'Aliment de Croissance Chair' : 'Aliment de Finition')
+        : (week <= 3 ? 'Aliment Prédémarrage' : week <= 6 ? 'Aliment de Croissance Chair' : 'Aliment de Finition');
+
+      let prodId = bagKg === 25 ? 'feed-predem-25' : (phaseName === 'Aliment de Finition' ? 'feed-finition-50' : 'feed-croissance-50');
+      const totalKg = count * dailyKg * days;
+      const bagsNeeded = Math.max(1, Math.ceil(totalKg / bagKg));
+      const prod = PRODUCTS.find(p => p.id === prodId);
+      const budget = bagsNeeded * (currentMode === 'b2b' ? prod.priceB2B : prod.priceB2C);
+
+      document.getElementById('calc-result').innerHTML = `
+        <div class="flex justify-between items-center">
+          <div>
+            <div class="text-xs font-bold text-slate-500">Phase recommandée (S${week})</div>
+            <div class="text-lg font-extrabold text-green-800">${phaseName}</div>
+          </div>
+          <span class="text-xs font-bold bg-white px-3 py-1 rounded-full border border-green-200">${count} sujets</span>
+        </div>
+        <div class="grid grid-cols-3 gap-3">
+          <div class="bg-white p-3 rounded-xl border border-slate-200"><div class="text-[11px] text-slate-500">Total (${days}j)</div><div class="font-extrabold">${Math.round(totalKg)} kg</div></div>
+          <div class="bg-white p-3 rounded-xl border border-slate-200"><div class="text-[11px] text-slate-500">Sacs (${bagKg}kg)</div><div class="font-extrabold text-amber-600">${bagsNeeded} sacs</div></div>
+          <div class="bg-white p-3 rounded-xl border border-slate-200"><div class="text-[11px] text-slate-500">Budget</div><div class="font-extrabold text-green-700 text-xs sm:text-sm">${formatPrice(budget)}</div></div>
+        </div>
+        <button onclick="addToCart('${prod.id}', ${bagsNeeded}); toggleCart(true);" class="w-full py-2.5 rounded-xl bg-green-600 hover:bg-green-700 text-white font-bold text-xs sm:text-sm cursor-pointer">
+          Commander ces ${bagsNeeded} sac(s) maintenant →
+        </button>
+      `;
+    }
+
+    const chatMessages = [{ sender: 'ai', text: 'Bonjour ! Je suis l\'assistant MAYAS VOLAILLE. Posez-moi vos questions sur nos aliments (Prédémarrage, Croissance Chair, Finition), nos volailles ou nos services.' }];
+    function renderChat() {
+      const box = document.getElementById('chat-messages');
+      box.innerHTML = chatMessages.map(m => `
+        <div class="flex ${m.sender === 'user' ? 'justify-end' : 'justify-start'}">
+          <div class="max-w-[88%] px-3.5 py-2.5 rounded-2xl text-xs sm:text-sm ${m.sender === 'user' ? 'bg-green-600 text-white' : 'bg-slate-100 text-slate-800 border border-slate-200'}">${m.text}</div>
+        </div>
+      `).join('');
+      box.scrollTop = box.scrollHeight;
+    }
+
+    function askAssistant(text) {
+      chatMessages.push({ sender: 'user', text });
+      const q = text.toLowerCase();
+      let reply = `Nos équipes MAYAS DISTRIBUTION vous orientent vers l'aliment adapté (Prédémarrage, Croissance Chair, Finition). Utilisez le calculateur ci-contre pour vos quantités.`;
+      if (q.includes('mortalit') || q.includes('malad') || q.includes('sanitaire')) {
+        reply = `⚠️ <strong>Alerte sanitaire :</strong> En cas de forte mortalité ou symptômes, isolez immédiatement les sujets et <strong>contactez un vétérinaire avicole qualifié</strong>.`;
+      } else if (q.includes('prédémarrage') || q.includes('croissance') || q.includes('finition')) {
+        reply = `<strong>Gamme MAYAS DISTRIBUTION :</strong> Aliment Prédémarrage, Aliment de Croissance Chair et Aliment de Finition pour soutenir chaque étape d'élevage.`;
+      } else if (q.includes('contact') || q.includes('service')) {
+        reply = `<strong>MAYAS VOLAILLE :</strong> Tél. 01.52.56.33.93 / 07.77.09.30.69 / 07.59.05.80.25 • Email : chepitimayasagrisarl@gmail.com / mayasvolaille@gmail.com • 100% Halal.`;
+      }
+      chatMessages.push({ sender: 'ai', text: reply });
+      renderChat();
+    }
+
+    function handleChatSubmit(e) {
+      e.preventDefault();
+      const input = document.getElementById('chat-input');
+      if (!input.value.trim()) return;
+      askAssistant(input.value.trim());
+      input.value = '';
+    }
+
+    function escalateToHuman() {
+      chatMessages.push({ sender: 'ai', text: `✅ Dossier préparé. Appelez le <strong>07.77.09.30.69</strong> / <strong>01.52.56.33.93</strong> ou cliquez sur le bouton WhatsApp vert.` });
+      renderChat();
+    }
+
+    function switchSubTool(tool) {
+      const isReorder = tool === 'reorder';
+      document.getElementById('panel-reorder').classList.toggle('hidden', !isReorder);
+      document.getElementById('panel-quote').classList.toggle('hidden', isReorder);
+      document.getElementById('tab-btn-reorder').className = isReorder ? 'px-4 py-2 rounded-xl text-xs sm:text-sm font-extrabold bg-slate-900 text-white transition cursor-pointer' : 'px-4 py-2 rounded-xl text-xs sm:text-sm font-extrabold bg-slate-100 text-slate-700 transition cursor-pointer';
+      document.getElementById('tab-btn-quote').className = !isReorder ? 'px-4 py-2 rounded-xl text-xs sm:text-sm font-extrabold bg-slate-900 text-white transition cursor-pointer' : 'px-4 py-2 rounded-xl text-xs sm:text-sm font-extrabold bg-slate-100 text-slate-700 transition cursor-pointer';
+    }
+
+    function updateReorderForecast() {
+      const bags = Math.max(0, Number(document.getElementById('reorder-bags').value || 0));
+      const bagKg = Number(document.getElementById('reorder-bag-kg').value || 50);
+      const dailyKg = Math.max(1, Number(document.getElementById('reorder-daily-kg').value || 50));
+      const daysLeft = Math.floor((bags * bagKg) / dailyKg);
+      const suggested = Math.max(2, Math.ceil((dailyKg * 14) / bagKg));
+      const prodId = bagKg === 25 ? 'feed-predem-25' : 'feed-croissance-50';
+
+      document.getElementById('reorder-result').innerHTML = `
+        <div class="flex items-center justify-between mb-2">
+          <span class="font-extrabold text-slate-900">Autonomie : ~${daysLeft} jours</span>
+          <span class="text-xs font-bold px-2.5 py-0.5 rounded-full ${daysLeft <= 4 ? 'bg-red-100 text-red-800' : 'bg-green-100 text-green-800'}">${daysLeft <= 4 ? 'Urgent' : 'OK'}</span>
+        </div>
+        <button onclick="addToCart('${prodId}', ${suggested}); toggleCart(true);" class="w-full py-2 rounded-xl bg-amber-500 hover:bg-amber-600 text-slate-950 font-extrabold text-xs cursor-pointer">
+          Réapprovisionner ${suggested} sacs (${bagKg}kg) →
+        </button>
+      `;
+    }
+
+    function generateStructuredQuote(e) {
+      e.preventDefault();
+      const name = document.getElementById('lead-name').value.trim();
+      const phone = document.getElementById('lead-phone').value.trim();
+      const need = document.getElementById('lead-need').value;
+      const volume = document.getElementById('lead-volume').value.trim();
+      const waText = encodeURIComponent(`Bonjour MAYAS VOLAILLE, demande de devis :\n- Structure : ${name} (${phone})\n- Besoin : ${need}\n- Volume : ${volume}`);
+      const out = document.getElementById('quote-output');
+      out.classList.remove('hidden');
+      out.innerHTML = `<strong>Devis prêt pour ${name} :</strong> ${need} (${volume}). <a href="https://wa.me/2250777093069?text=${waText}" target="_blank" class="underline font-extrabold text-green-700 ml-2">Envoyer sur WhatsApp →</a>`;
+    }
+
+    function submitContactForm(e) {
+      e.preventDefault();
+      const box = document.getElementById('contact-confirmation');
+      box.classList.remove('hidden');
+      box.textContent = `Merci ! Votre demande a bien été transmise à l'équipe commerciale MAYAS VOLAILLE.`;
+      e.target.reset();
+    }
+
+    function initAnimations() {
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) entry.target.classList.add('visible');
+        });
+      }, { threshold: 0.1 });
+      document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+      document.querySelectorAll('.counter').forEach(counter => {
+        const target = +counter.dataset.target;
+        const step = Math.max(1, Math.ceil(target / 40));
+        let current = 0;
+        const timer = setInterval(() => {
+          current += step;
+          if (current >= target) {
+            counter.textContent = target.toLocaleString('fr-FR');
+            clearInterval(timer);
+          } else {
+            counter.textContent = current.toLocaleString('fr-FR');
+          }
+        }, 30);
+      });
+
+      document.querySelectorAll('img').forEach((img) => {
+        img.addEventListener('error', function () {
+          if (this.dataset.fallbackApplied) return;
+          this.dataset.fallbackApplied = '1';
+          const label = encodeURIComponent(this.alt || 'MAYAS VOLAILLE');
+          this.src = `data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500"><rect width="800" height="500" fill="%23f1f5f9"/><rect x="24" y="24" width="752" height="452" rx="20" fill="none" stroke="%23cbd5e1" stroke-width="3" stroke-dasharray="10 8"/><text x="400" y="225" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="%2315803d">MAYAS VOLAILLE</text><text x="400" y="265" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="%23475569">Fichier introuvable dans assets/</text><text x="400" y="298" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="%23b45309">${label}</text></svg>`;
+        });
+      });
+    }
+
+    window.addEventListener('DOMContentLoaded', () => {
+      renderCatalog();
+      renderCart();
+      calculateFeed();
+      renderChat();
+      updateReorderForecast();
+      initAnimations();
+    });
+  </script>
+</body>
+>>>>>>> 1a0eb74 (Ajout site vitrine MAYAS VOLAILLE et dossier assets)
 </html>
